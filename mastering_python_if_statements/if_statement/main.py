@@ -4,8 +4,11 @@ calories_goal = 300
 calories_goal_met = False  # default value
 
 # Check calories
-___:
-    calories_goal_met = ___
+if calories_burned >= calories_goal:
+    calories_goal_met = True
+else:
+    print(f"Calories Burned: {calories_burned}\nCalories Goal: {calories_goal}")
+    calories_goal_met = False
 
 # Testing
 print("Is the goal for burned calories met?", calories_goal_met)
