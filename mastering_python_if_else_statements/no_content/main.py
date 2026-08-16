@@ -1,7 +1,9 @@
-water_intake = 1200
-daily_goal = 2000
+password = "user123"
+#password = "p@ssword123"
+correct_password = "p@ssword123"
+correct = "Login successful!"
+incorrect = "Incorrect password, try again."
+login_message = correct if password == correct_password else incorrect
 
-if water_intake >= daily_goal:
-    print("Great job! You've reached your water goal!")
-else:
-    print("You haven't reached your water goal yet!")
+# Testing
+print("Login Status:", login_message)
