@@ -7,10 +7,8 @@ morning_exercise = False
 all_conditions_met = True
 
 # Rewrite this using a single if statement
-if steps_taken <= step_goal:
-    if calories_burned <= calorie_goal:
-        if morning_exercise == False:
-            all_conditions_met = False
+if steps_taken <= step_goal and calories_burned <= calorie_goal and morning_exercise == False:
+    all_conditions_met = False
 
 # Testing
 print("Have all conditions been met?", all_conditions_met)
